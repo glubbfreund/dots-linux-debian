@@ -105,16 +105,15 @@
       <property name="view-mode" type="int" value="0"/>
       <property name="button-icon" type="string" value="emblem-debian-white"/>
       <property name="recent" type="array">
+        <value type="string" value="galculator.desktop"/>
         <value type="string" value="org.prismlauncher.PrismLauncher.desktop"/>
-        <value type="string" value="Modrinth App.desktop"/>
+        <value type="string" value="steam.desktop"/>
         <value type="string" value="xfce-wmtweaks-settings.desktop"/>
         <value type="string" value="xfce-wm-settings.desktop"/>
         <value type="string" value="xfce-workspaces-settings.desktop"/>
         <value type="string" value="com.github.xeco23.WasIstLos.desktop"/>
         <value type="string" value="lightdm-gtk-greeter-settings.desktop"/>
-        <value type="string" value="steam.desktop"/>
         <value type="string" value="system-config-printer.desktop"/>
-        <value type="string" value="xfce-mouse-settings.desktop"/>
       </property>
       <property name="launcher-icon-size" type="int" value="3"/>
       <property name="category-icon-size" type="int" value="2"/>
@@ -128,9 +127,6 @@
         <value type="string" value="xfce4-terminal-emulator.desktop"/>
         <value type="string" value="emacsclient.desktop"/>
       </property>
-    </property>
-    <property name="plugin-12" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-14" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="pulseaudio">
@@ -151,6 +147,9 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
   </property>
