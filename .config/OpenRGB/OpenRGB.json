@@ -1759,6 +1759,9 @@
             1994918717196657649
         ]
     },
+    "Theme": {
+        "theme": "Light"
+    },
     "UserInterface": {
         "autoload_profiles": {
             "exit_profile": {
@@ -1782,8 +1785,8 @@
             "x": 0,
             "y": 0
         },
-        "greyscale_tray_icon": false,
-        "language": "default",
+        "greyscale_tray_icon": true,
+        "language": "Deutsch",
         "minimize_on_close": false
     }
 }
