@@ -1,0 +1,6 @@
+[Unit]
+Description=Battery monitor
+
+[Service]
+ExecStart=/home/oli/.local/bin/batmonitor
+

@@ -1,0 +1,5 @@
+[Unit]
+Description=Calendar Sync
+
+[Service]
+ExecStart=/home/oli/.local/bin/synccalendar

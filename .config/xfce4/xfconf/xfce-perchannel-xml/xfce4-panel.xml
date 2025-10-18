@@ -105,6 +105,7 @@
       <property name="view-mode" type="int" value="0"/>
       <property name="button-icon" type="string" value="emblem-debian-white"/>
       <property name="recent" type="array">
+        <value type="string" value="mpv.desktop"/>
         <value type="string" value="galculator.desktop"/>
         <value type="string" value="org.prismlauncher.PrismLauncher.desktop"/>
         <value type="string" value="steam.desktop"/>
