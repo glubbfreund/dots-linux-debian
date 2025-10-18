@@ -1760,7 +1760,7 @@
         ]
     },
     "Theme": {
-        "theme": "Light"
+        "theme": "Dark"
     },
     "UserInterface": {
         "autoload_profiles": {
