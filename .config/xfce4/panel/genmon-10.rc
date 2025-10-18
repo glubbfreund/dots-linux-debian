@@ -1,6 +1,0 @@
-Command=/home/oli/.local/bin/gpumonitor
-UseLabel=0
-Text=GPU Modus
-UpdatePeriod=86400000
-Font=Ubuntu 6
-
