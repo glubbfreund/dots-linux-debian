@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=/home/oli/.local/bin/gpumode ded
+Icon=prime-nvidia
+StartupNotify=false
+Terminal=false
+Categories=System;X-XFCE;X-Xfce-Toplevel;
+Keywords[de]=Abmelden;Beenden;Verlassen;Herunterfahren;
+Keywords=logout;exit;quit;shutdown;
+OnlyShowIn=XFCE;
+Name[de]=Nvidia Prime
+Name=Log Out
+Comment[de]=Nur dGPU für maximale Performance.
+Comment=Log out of the Xfce Desktop
+X-XFCE-Source=file:///usr/share/applications/xfce4-session-logout.desktop
+Path=

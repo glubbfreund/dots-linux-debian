@@ -1,0 +1,6 @@
+Command=/home/oli/.local/bin/fanmonitor
+UseLabel=0
+Text=Lüftermodus
+UpdatePeriod=60000
+Font=Ubuntu 6
+
