@@ -6,4 +6,5 @@ cp /home/oli/Dokumente/Src/steamIconPatch/light.png /home/oli/.steam/debian-inst
 cp /home/oli/.config/fastfetch/config-light.jsonc /home/oli/.config/fastfetch/config.jsonc
 sudo /home/oli/Dokumente/Src/WasistlosIconPatch/install-light.sh
 cp /home/oli/.config/wasistlos/settings-light.conf /home/oli/.config/wasistlos/settings.conf
+cp /home/oli/Dokumente/Portable/PrismLauncher-9.4/prismlauncher-light.cfg /home/oli/Dokumente/Portable/PrismLauncher-9.4/prismlauncher.cfg
 sudo gtk-update-icon-cache -f /usr/share/icons/hicolor
