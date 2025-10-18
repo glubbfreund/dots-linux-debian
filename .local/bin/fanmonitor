@@ -1,0 +1,5 @@
+#!/bin/bash
+# ~/.local/bin/fanmonitor
+
+fanProfile=$(asusctl profile -p | grep profile | awk '{print toupper(substr($NF,1,3))}')
+echo "$fanProfile   "

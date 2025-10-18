@@ -1,0 +1,25 @@
+#!/bin/bash
+# ~/.local/bin/batmonitor
+
+export DISPLAY=:0
+export XAUTHORITY=/home/oli/.Xauthority
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+XDG_RUNTIME_DIR=/run/user/1000
+PULSE_SERVER=unix:/run/user/1000/pulse/native
+
+filemarker=/home/oli/.bat
+capacity=$(cat /sys/class/power_supply/BAT1/capacity)
+
+if [ $capacity -gt 80 ]; then
+    notify-send -i battery-missing-symbolic \
+		"Akku über 80 %" \
+		"Bitte entladen um Akku zu schonen."
+    paplay /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
+    touch $filemarker
+elif [ -f $filemarker ] && [ $capacity -le 75 ]; then
+    notify-send -i battery-good \
+		"Akkuladung OK!" \
+		"Netzteil kann wieder eingesteckt werden."
+    paplay /usr/share/sounds/freedesktop/stereo/message-new-instant.oga
+    rm $filemarker
+fi

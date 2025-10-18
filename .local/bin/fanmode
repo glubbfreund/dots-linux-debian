@@ -1,0 +1,12 @@
+#!/bin/bash
+# ~/.local/bin/fanmode
+
+rogMessage=$(asusctl profile -n)
+rogCurrentMsg=$(asusctl profile -p)
+currentProfile=$(echo $rogCurrentMsg | grep profil | awk '{print $NF}')
+
+xfce4-panel --plugin-event=genmon-17:refresh:bool:true
+
+sleep 2 && [ "$(asusctl profile -p)" == "$rogCurrentMsg" ] && notify-send -i indicator-sensors-fan \
+	    "Profil gewechselt" \
+	    "Lüfterprofil $currentProfile ist nun aktiv."
