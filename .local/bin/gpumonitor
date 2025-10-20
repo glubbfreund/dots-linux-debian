@@ -1,4 +1,11 @@
 #!/bin/bash
 # ~/.local/bin/gpumonitor
 
-m=$(supergfxctl -g | cut -c1-3); [ "$m" = "Asu" ] && echo "PRI   " || [ "$m" = "Int" ] && echo "ECO   "  || echo "${m^^}   "
+m=$(supergfxctl -g | cut -c1-3);
+if [ "$m" = "Asu" ]; then
+    echo "PRI   "
+elif [ "$m" = "Int" ]; then
+     echo "ECO   "
+else
+    echo "${m^^}   "
+fi
